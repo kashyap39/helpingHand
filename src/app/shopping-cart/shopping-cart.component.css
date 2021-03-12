@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+.head{
+    font-family: 'Truculenta', sans-serif;
+    font-size: 40px;
+    margin-left: 40px;
+}
+.parentshow{
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Truculenta', sans-serif;
+}
+.show{
+    display: flex;
+    justify-content: space-around;
+    border:1px solid rgb(168, 166, 166);
+}
+.show div{
+    flex:33.3%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+img{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.head2{
+    display: flex;
+    justify-content: center;
+     align-content: center;
+     font-family: 'Newsreader', serif;
+}
+
+.close{
+    display:flex;
+    justify-content:space-between;
+}
+.close button{
+    background-color: blue;
+    color:white;
+    padding: 8px;
+    outline: none;
+    border:none;
+}
+.pay{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.ment button{
+    padding:8px 16px;
+    background-color: blue;
+    color: white;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+}

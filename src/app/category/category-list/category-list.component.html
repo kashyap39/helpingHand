@@ -1,0 +1,18 @@
+<div class="categories">
+    <div class="category-name" routerLinkActive="active-link"   [routerLinkActiveOptions]="{exact: true}">
+        <a  [routerLink]="['details','Allcategories']" 
+        
+        >
+            <div class="name" >All categories</div>
+        </a>
+    </div>
+    <div class="category-name" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" >
+        <a  [routerLink]="['details','Kitchen']"  ><div class="name" >Kitchen</div></a>
+    </div>
+    <div class="category-name" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        <a  [routerLink]="['details','vegetables']" ><div class="name" >Vegetables</div></a>
+    </div>
+    <div class="category-name last" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        <a  [routerLink]="['details','Laundry']" ><div class="name" >Laundry</div></a>
+    </div>
+</div>

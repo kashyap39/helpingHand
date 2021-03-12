@@ -1,0 +1,35 @@
+<h3 class="head"> Shopping Cart</h3>
+<div class="head2"><h2>you have {{size}} {{size>1?'items':'item'}} in your cart</h2></div>
+<div class="parentshow">
+    <div class="show">
+        <div>Product</div>
+        <div>Quantity</div>
+        <div>Price</div>
+    </div>
+    <div *ngFor="let it of items;let i=index" class="show">
+        <div *ngIf="it.item>0">
+            <div>
+                <div class="image"><img [src]="it.imgPath"></div>
+                <div>{{it.name}}</div>
+                
+            </div>
+            <div class="close">
+                <div><button (click)="remove(it.id,i)">-</button></div><div>{{it.item}}</div><div><button (click)="add(it.id,i)">+</button></div>
+            </div>
+           
+            <div>Rs {{it.item}} x {{it.price}}</div>
+        </div>
+        
+    </div>
+        <div class="show" *ngIf="size>0 ">
+            <div></div>
+            <div></div>
+            <div>Total  Rs {{total_price}}</div>
+        </div>
+</div>
+
+<div *ngIf="size>0" class="pay"  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+    <div class="ment">
+        <a [routerLink]="'payment'" ><button (click)="check()">Make Payment</button></a>
+    </div>
+</div>

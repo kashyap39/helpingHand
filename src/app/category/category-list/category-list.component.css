@@ -1,0 +1,35 @@
+.categories{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.category-name{
+    border-top:0.8px solid grey;
+    border-right:0.8px solid grey;
+    border-left:0.8px solid grey;
+    width:60%;
+    padding-top:15px;
+    padding-bottom:9px;
+    text-align: center;
+    border-radius: 3px 3px 0px 0px;
+}
+.category-name a{
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+}
+.last{
+    border-bottom:0.8px solid grey;
+}
+a{
+    text-decoration: none;
+}
+.active-link{
+    background-color: blue;
+    color: white;
+}
+.active-link .name{
+    color:white;
+}

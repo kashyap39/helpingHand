@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="image">
+        <img [src]="data.imgPath">
+    </div>
+    <div class="details">
+        <div class="name">{{data.name}}</div>
+        <div class="price">Rs. {{data.price}}/kg</div>
+        <div class="add-to-cart" *ngIf="data.item===0">
+            <button (click)="addItem()">Add to cart</button>
+        </div>
+        <div class="add-to-cart1" *ngIf="data.item!==0">
+            <button (click)="subItem()">-</button>
+            <p>{{data.item}} {{data.item>1?'items':'item'}} on cart</p>
+            <button (click)="addItem()">+</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.category{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+app-category-list{
+    flex:30%;
+}
+.right{
+    flex:70%;
+}

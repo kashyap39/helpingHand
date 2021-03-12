@@ -1,0 +1,9 @@
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+app-category-item{
+    width:45%;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
