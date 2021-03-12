@@ -6,9 +6,11 @@ import { CategoryComponent } from '../category/category.component';
 import { ShoppingCartComponent } from '../shopping-cart/shopping-cart.component';
 import { PaymentComponent } from '../payment/payment.component';
 import { LoginComponent } from '../login/login.component';
+import { SignupComponent } from '../signup/signup.component';
 
 const approutes:Routes=[
   { path:'login' , component:LoginComponent},
+  { path:'signup' , component:SignupComponent},
   { path:'shoppingcart' , component:ShoppingCartComponent},
   { path:'shoppingcart/payment',component:PaymentComponent},
   { path:'', redirectTo:'/categories/details/Allcategories',pathMatch:'full'},
